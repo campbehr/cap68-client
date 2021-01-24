@@ -52,7 +52,7 @@ const Contact = () => {
       setUser(initialUser);
     } else {
       axios
-        .post(process.env.CAP68_SIGNUP, user)
+        .post(process.env.REACT_APP_CAP68_SIGNUP, user)
 
         .then(alert("Thank you"));
 
