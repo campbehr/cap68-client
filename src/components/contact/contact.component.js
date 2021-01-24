@@ -29,7 +29,7 @@ const Contact = () => {
   };
 
   useEffect(() => {
-    console.log(axios.get(`${CAP68_WELCOME}`));
+    console.log(axios.get(process.env.CAP68_WELCOME));
   }, []);
 
   const [user, setUser] = useState(initialUser);
