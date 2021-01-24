@@ -1,0 +1,89 @@
+.item1 {
+  grid-area: about;
+  #img-1 {
+    height: 300px;
+    width: 100%;
+    margin-top: 90px;
+    background: url("../../assets/Cockpit2.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.item2 {
+  grid-area: contact;
+  #img-2 {
+    height: 300px;
+    width: 100%;
+    margin-top: 30px;
+    background: url("../../assets/Runway.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.item3 {
+  grid-area: footer;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid:
+    "about" auto
+    "contact" auto
+    "footer" 180px
+    / 1fr;
+}
+
+@media screen and (min-width: 750px) {
+  .item1 {
+    #img-1 {
+      height: 500px;
+      margin-top: 110px;
+    }
+  }
+  .item2 {
+    #img-2 {
+      height: 500px;
+      margin-top: 75px;
+    }
+  }
+}
+
+@media screen and(min-width: 950px) {
+  .item1 {
+    #img-1 {
+      height: 500px;
+      margin-top: 200px;
+    }
+  }
+  .item2 {
+    #img-2 {
+      height: 500px;
+      margin-top: 95px;
+    }
+  }
+
+  .container {
+    grid:
+      ". about ." auto
+      ". contact ." auto
+      "footer footer footer" 180px
+      / 1fr minmax(auto, 950px) 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item1 {
+    #img-1 {
+      margin-top: 250px;
+    }
+  }
+}
