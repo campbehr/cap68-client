@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import AirlineList from "./airline-list.component";
 import "./contact.styles.css";
@@ -40,10 +39,6 @@ const Contact = () => {
     setUser({ ...user, [name]: value });
   };
 
-  const handleChangeDate = (date) => {
-    setUser({ ...user, retirement: date });
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -56,7 +51,6 @@ const Contact = () => {
 
         .then(alert("Thank you"));
 
-      console.log(user.retirement);
       setUser(initialUser);
     }
   };
