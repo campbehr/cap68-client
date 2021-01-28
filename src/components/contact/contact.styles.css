@@ -101,20 +101,6 @@
   outline: none;
 }
 
-.contact-section .form-container .form .react-datepicker-wrapper,
-.contact-section .form-container .form .react-datepicker__input-container {
-  width: 100%;
-}
-
-.contact-section .form-container .form .react-datepicker-wrapper input,
-.contact-section .form-container .form .react-datepicker__input-container input {
-  width: 99.5%;
-}
-
-.contact-section .form-container .form .react-datepicker-popper {
-  z-index: 2;
-}
-
 .contact-section .form-container .form input,
 .contact-section .form-container .form select,
 .contact-section .form-container .form textarea {
@@ -186,7 +172,7 @@
 
 @media screen and (min-width: 750px) {
   .contact-section {
-    margin-top: -130;
+    margin-top: -130px;
   }
   .contact-section .form-container {
     width: 635px;

@@ -56,6 +56,7 @@ const Contact = () => {
 
         .then(alert("Thank you"));
 
+      console.log(user.retirement);
       setUser(initialUser);
     }
   };
@@ -102,12 +103,16 @@ const Contact = () => {
             <option value="First Officer" />
           </datalist>
           <CustomLabel name={user.retirement} child="Retirement Date" />
-          <div className="date-div">
-            <DatePicker
-              selected={user.retirement}
-              onChange={handleChangeDate}
-            />
-          </div>
+          <input
+            style={user.retirement !== "" ? {} : { paddingLeft: "120px" }}
+            name="retirement"
+            placeholder="mm/dd/yyyy"
+            type="date"
+            value={user.retirement}
+            onChange={handleChange}
+            min="2020-01-01"
+            max="2030-12-31"
+          />
           <CustomLabel name={user.base} child="Base" />
           <input name="base" value={user.base} onChange={handleChange} />
           <CustomLabel name={user.registration} child="Registered State" />
@@ -184,7 +189,7 @@ const Contact = () => {
           />
           <textarea
             name="message"
-            maxLength="150"
+            maxLength="300"
             value={user.message}
             onChange={handleChange}
           />

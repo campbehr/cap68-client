@@ -68,7 +68,7 @@
   width: 100vw;
   z-index: 1;
   position: absolute;
-  margin-top: 280px;
+  top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,7 +124,7 @@
     height: auto;
     width: 100%;
     position: relative;
-    margin-top: auto;
+    top: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
