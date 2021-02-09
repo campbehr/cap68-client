@@ -27,9 +27,9 @@ const Contact = () => {
     zip: "",
   };
 
-  useEffect(() => {
-    console.log(axios.get(process.env.REACT_APP_CAP68_WELCOME));
-  }, []);
+  // useEffect(() => {
+  //   console.log(axios.get(process.env.REACT_APP_CAP68_WELCOME));
+  // }, []);
 
   const [user, setUser] = useState(initialUser);
 
