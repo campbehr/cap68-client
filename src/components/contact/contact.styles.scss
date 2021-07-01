@@ -1,153 +1,156 @@
 @import "../../themes/colors.scss";
 
 .contact-section {
-  width: 100%;
-  margin-top: -70px;
-  margin-bottom: 145px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	width: 100%;
+	margin-top: -70px;
+	margin-bottom: 145px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-  .form-container {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: $primary-background;
-    border: solid 1px $border-color;
-    border-radius: 10px;
+	.form-container {
+		width: 300px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background-color: $primary-background;
+		border: solid 1px $border-color;
+		border-radius: 10px;
 
-    .form-title {
-      color: $primary-color;
-      font-size: 30px;
-    }
+		.form-title {
+			color: $text-color;
+			font-size: 30px;
+		}
 
-    .form {
-      width: 90%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
+		.form {
+			width: 90%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-evenly;
 
-      label {
-        z-index: 1;
-        position: relative;
-        pointer-events: none;
-        top: 33px;
-        text-indent: 15px;
-        line-height: 0px;
-        font-size: 18px;
-        transition: 300ms ease all;
-        color: $primary-color;
-      }
+			label {
+				z-index: 1;
+				position: relative;
+				pointer-events: none;
+				top: 33px;
+				text-indent: 15px;
+				line-height: 0px;
+				font-size: 18px;
+				transition: 300ms ease all;
+				color: $text-color;
+			}
 
-      .shrink {
-        top: 10px;
-        font-size: 13px;
-        color: $primary-color-light;
-      }
+			.shrink {
+				top: 10px;
+				font-size: 13px;
+				color: $primary-color-light;
+			}
 
-      input[type="number"]::-webkit-inner-spin-button,
-      input[type="number"]::-webkit-outer-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-      }
+			input[type="number"]::-webkit-inner-spin-button,
+			input[type="number"]::-webkit-outer-spin-button {
+				-webkit-appearance: none;
+				margin: 0;
+			}
 
-      input[type="number"] {
-        -moz-appearance: textfield;
-      }
+			input[type="number"] {
+				-moz-appearance: textfield;
+			}
 
-      select {
-        background-color: $primary-background;
-      }
+			select {
+				background-color: $primary-background;
+			}
 
-      input,
-      select,
-      textarea,
-      button {
-        color: $primary-color;
-        box-shadow: 2px 4px 4px 1px $input-shadow;
-        border: none;
-        border-radius: 10px;
-        -webkit-appearance: none;
-        &:focus {
-          outline: none;
-        }
-      }
+			input,
+			select,
+			textarea,
+			button {
+				box-shadow: 2px 4px 4px 1px $input-shadow;
+				border: none;
+				border-radius: 10px;
+				-webkit-appearance: none;
+				&:focus {
+					outline: none;
+				}
+			}
 
-      input,
-      select,
-      textarea {
-        height: 27px;
-        width: fill;
-        margin-top: 18px;
-        text-indent: 15px;
-        line-height: 27px;
-        font-size: 18px;
-        &:focus {
-          box-shadow: 2px 4px 4px 1px $secondary-color;
-        }
-      }
+			input,
+			select,
+			textarea {
+				color: $primary-color;
+				height: 27px;
+				width: fill;
+				margin-top: 18px;
+				text-indent: 15px;
+				line-height: 27px;
+				font-size: 18px;
+				&:focus {
+					box-shadow: 2px 4px 4px 1px
+						$secondary-color;
+				}
+			}
 
-      textarea {
-        height: 150px;
-        resize: none;
-      }
+			textarea {
+				height: 150px;
+				resize: none;
+			}
 
-      ::placeholder {
-        color: $primary-color;
-      }
+			::placeholder {
+				color: $primary-color;
+			}
 
-      button {
-        margin: 40px 0;
-        font-size: 20px;
-        font-weight: 600;
-        line-height: 40px;
-        cursor: pointer;
-        background-color: $secondary-color;
+			button {
+				margin: 40px 0;
+				font-size: 20px;
+				font-weight: 600;
+				line-height: 40px;
+				cursor: pointer;
+				color: $primary-background;
+				background-color: $primary-color;
 
-        &:active {
-          background-color: $secondary-color-dark;
-          box-shadow: 2px 4px 4px 1px $input-shadow-button-active;
-          transform: translateY(4px);
-          color: white;
-        }
-      }
+				&:active {
+					background-color: $secondary-color;
+					box-shadow: 2px 4px 4px 1px
+						$input-shadow-button-active;
+					transform: translateY(4px);
+					color: $primary-color;
+				}
+			}
 
-      .honeybear {
-        display: none !important;
-      }
-    }
-  }
+			.honeybear {
+				display: none !important;
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 525px) {
-  .contact-section {
-    .form-container {
-      width: 500px;
-    }
-  }
+	.contact-section {
+		.form-container {
+			width: 500px;
+		}
+	}
 }
 
 @media screen and (min-width: 750px) {
-  .contact-section {
-    margin-top: -130px;
+	.contact-section {
+		margin-top: -130px;
 
-    .form-container {
-      width: 635px;
+		.form-container {
+			width: 635px;
 
-      .form {
-        width: 80%;
-      }
-    }
-  }
+			.form {
+				width: 80%;
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 950px) {
-  .contact-section {
-    margin-top: -180px;
+	.contact-section {
+		margin-top: -180px;
 
-    .form-container {
-      width: 850px;
-    }
-  }
+		.form-container {
+			width: 850px;
+		}
+	}
 }

@@ -39,7 +39,6 @@ const Contact = () => {
 		e.preventDefault();
 
 		if (user.check || !user.password === "") {
-			alert("nice try");
 			setUser(initialUser);
 		} else {
 			axios
@@ -47,9 +46,16 @@ const Contact = () => {
 					process.env.REACT_APP_CAP68_SIGNUP,
 					user
 				)
-				.then(alert("Thank you"))
+				.then(
+					alert(
+						"Thanks for signing up! You should recieve a welcome email momentarily."
+					)
+				)
 				.catch((err) => {
-					console.log(err.response.data.error);
+					alert(
+						"An error occurred, please try again later"
+					);
+					// console.log(err.response.data.error);
 				});
 
 			setUser(initialUser);
@@ -109,8 +115,9 @@ const Contact = () => {
 					/>
 					<datalist id="positions">
 						<option value="Captain" />
-						<option value="Senior First Officer" />
+						{/* <option value="Senior First Officer" /> */}
 						<option value="First Officer" />
+						<option value="Other" />
 					</datalist>
 					<CustomLabel
 						name={user.retirement}

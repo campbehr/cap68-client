@@ -1,10 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAEA,AAAA,iBAAiB,CAAC;EAChB,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,gBAAgB,ECPI,OAAkB;CD6BvC;;AA5BD,AAQE,iBARe,CAQf,eAAe,CAAC;EACd,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;CAapB;;AA3BH,AAgBI,iBAhBa,CAQf,eAAe,CAQb,YAAY,CAAC;EACX,MAAM,EAAE,IAAI;CACb;;AAlBL,AAoBI,iBApBa,CAQf,eAAe,CAYb,mBAAmB,CAAC;EAClB,UAAU,EAAE,IAAI;EAChB,KAAK,ECxBK,OAAe;EDyBzB,SAAS,EAAE,IAAI;EACf,eAAe,EAAE,SAAS;EAC1B,MAAM,EAAE,OAAO;CAChB",
-    "sources": [
-        "footer.styles.scss",
-        "../../themes/colors.scss"
-    ],
-    "names": [],
-    "file": "footer.styles.css"
-}
+{"version":3,"sourceRoot":"","sources":["footer.styles.scss","../../themes/colors.scss"],"names":[],"mappings":"AAEA;EACC;EACA;EACA;EACA;EACA;EACA;;AAEA;EACC;EACA;EACA;EACA;EACA;EACA;;AAEA;EACC;;AAGD;EACC;EACA,OCvBa;EDwBb;EACA;EACA","file":"footer.styles.css"}
