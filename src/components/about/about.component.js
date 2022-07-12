@@ -6,31 +6,43 @@ const About = () => {
   return (
     <main className="about" id="mission">
       <div className="mission-container">
-        <p className="subhead">
-          Hello Fellow Pilots,
+        <p className="subhead">Fellow Pilots,</p>
+        <p>
+          Welcome to the Coalition For Airline Pilots Age 68 Retirement
+          Campaign. Our mission is to raise the mandatory retirement age for
+          pilots in the U.S. to age 68.
         </p>
         <p>
-        This message is from the newly formed Coalition for Airlines Pilots Age 68 Retirement Poltical Action
-        Committee.
-        </p>
-        <p>Our mission is to raise the mandatory retirement age for pilots in the U.S. to 68.</p>
-        <p>
-        As you may know, on December 13,2007, the “Fair Treatment for Experienced Pilots Act” was signed into
-law. This raised the mandatory age for retirement from 60 to 65 - a change that was long overdue. Now, in
-2021, with over 13 years of data collection, we know it was the right thing to do because it put safety first.
-Experience matters! And now it’s time to do it again! Let’s keep safety first with experienced pilots in the
-cockpit, and in keeping with other countries, raise the mandatory retirement age to 68!
+          As you may know, on December 13, 2007, Congress enacted the “Fair
+          Treatment For Experienced Pilots Act." This raised the mandatory
+          retirement age from 60 to 65 - a long, overdue change. Now, in 2022,
+          with over 14 years of data collection, we know it was the right thing
+          to do because it put <strong>safety</strong> first. Experience
+          matters! Currently, with thousands of flight cancellations daily, due
+          to a pilot shortage, this is the time to act and keep{" "}
+          <strong>experience</strong> in the cockpit.
         </p>
         <p>
-        If you are currently in your airline’s PAC, ask yourself, “Are they advocating to raise the mandatory
-retirement age?” We have come through tough times that prompted early retirements. Consequently,
-leaving our cockpits with a lack of experience. So now the need is greater than ever to raise the mandatory
-retirement age to 68!
+          If you are an airline pilot interested in supporting this campaign,
+          please “Subscribe” and let us know how you are willing to help. This
+          is a grassroots effort that has gained national attention and is
+          moving forward at an accelerated pace. Please let us know in what area
+          you can offer your assistance with this campaign. We need your
+          support!
         </p>
-        <p>If you would like to join our efforts, please visit www.Cap68.com and sign up. We look forward to working
-with you!</p>
-<p>Sincerely,</p>
-<p>CAP68</p>
+        <p>
+          We are also working with{" "}
+          <a href="https://raisethepilotage.com/" target="blank_">
+            raisethepilotage.com
+          </a>
+          . Anyone can use this website to voice their concerns about the flight
+          disruptions and to support the solution of raising the pilot age.
+          Please share this website with your family and friends to give them
+          the opportunity to contact their local congressional representatives
+          and make their voices heard!
+        </p>
+        <p>Thank you,</p>
+        <p>CAP68</p>
       </div>
     </main>
   );

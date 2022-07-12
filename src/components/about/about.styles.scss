@@ -1,65 +1,65 @@
 @import "../../themes/colors.scss";
 
 .about {
-	width: 100%;
-	margin-top: -70px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  width: 100%;
+  margin-top: -70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mission-container {
-	width: 300px;
-	text-align: justify;
-	background-color: $primary-background;
-	border: solid 1px $border-color;
-	border-radius: 10px;
+  width: 300px;
+  text-align: left;
+  background-color: $primary-background;
+  border: solid 1px $border-color;
+  border-radius: 10px;
 
-	.subhead::first-letter {
-		font-size: 30px;
-		font-weight: bolder;
-		letter-spacing: 2px;
-	}
+  .subhead::first-letter {
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+  }
 
-	p {
-		font-size: 16px;
-		color: $text-color;
-		padding: 0 5px;
-	}
+  p {
+    font-size: 16px;
+    color: $text-color;
+    padding: 0 5px;
+  }
 }
 
 @media screen and (min-width: 525px) {
-	.mission-container {
-		width: 500px;
+  .mission-container {
+    width: 500px;
 
-		.subhead::first-letter {
-			font-size: 34px;
-		}
+    .subhead::first-letter {
+      font-size: 34px;
+    }
 
-		p {
-			font-size: 18px;
-			padding: 0 10px;
-		}
-	}
+    p {
+      font-size: 18px;
+      padding: 0 10px;
+    }
+  }
 }
 
 @media screen and (min-width: 750px) {
-	.about {
-		margin-top: -130px;
-	}
+  .about {
+    margin-top: -130px;
+  }
 
-	.mission-container {
-		width: 635px;
-	}
+  .mission-container {
+    width: 635px;
+  }
 }
 
 @media screen and (min-width: 950px) {
-	.about {
-		margin-top: -180px;
-	}
+  .about {
+    margin-top: -180px;
+  }
 
-	.mission-container {
-		width: 850px;
-		text-align: center;
-	}
+  .mission-container {
+    width: 850px;
+    text-align: center;
+  }
 }
