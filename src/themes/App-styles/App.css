@@ -62,7 +62,10 @@
     margin-top: 95px;
   }
   .container {
-    grid: ". about ." auto ". contact ." auto "footer footer footer" 180px/1fr minmax(auto, 950px) 1fr;
+    grid: ". about ." auto ". contact ." auto "footer footer footer" 180px/1fr minmax(
+        auto,
+        950px
+      ) 1fr;
   }
 }
 
